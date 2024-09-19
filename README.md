@@ -1,3 +1,6 @@
+### Install
+https://github.com/Akkadate/edocument/wiki/install
+
 # ระบบงานสารบรรณอีเล็คทรอนิคส์ (E-Document)
 
 
