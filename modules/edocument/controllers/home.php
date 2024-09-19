@@ -32,8 +32,9 @@ class Controller extends \Kotchasan\KBase
     {
         if ($login) {
             $document_count = \Edocument\Home\Model::getNew($login);
-            if ($document_count > 0) {
-                \Index\Home\Controller::renderCard($card, 'icon-edocument', 'E-Document', number_format($document_count), '{LNG_New document}', 'index.php?module=edocument');
+            if ($document_count >= 0) {
+	       \Index\Home\Controller::renderCard($card, 'icon-edocument', 'เอกสารเข้า', number_format($document_count), '{LNG_New document}', 'index.php?module=edocument');
+               \Index\Home\Controller::renderCard($card, 'icon-edocument', 'เอกสารออก', number_format($document_count), 'จำนวนเอกสาร' , 'index.php?module=edocument-sent');
             }
         }
     }

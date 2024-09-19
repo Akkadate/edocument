@@ -89,6 +89,21 @@ class View extends \Gcms\View
             'showpassword' => true,
             'validator' => ['keyup,change', 'checkPassword']
         ]);
+
+//
+	 $groups = $fieldset->add('groups');
+
+ // usernamexxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        $groups->add('text', [
+            'id' => 'register_phone',
+            'itemClass' => 'width50',
+            'labelClass' => 'g-input icon-user',
+            'label' => '{LNG_Phone}',
+            'comment' => '{LNG_Phone}',
+            'maxlength' => 50
+       ]);
+
+
         // หมวดหมู่
         $a = 0;
         foreach ($category->items() as $k => $label) {
