@@ -10,9 +10,13 @@
 เปิดไฟล์เพื่อแก้ไขโดยใช้ nano หรือ vim (คุณสามารถเลือกตัวแก้ไขไฟล์ที่คุณถนัด):
 
 [mysqld]
-```  sql_mode = ""  ``` 
+``` 
+```  sql_mode = ""  ```
+``` 
 
 #### แก้ไขหน้า home 404 เวลา เอกสารใหม่ = 0
 modules/edocument/controllers/home.php
+``` 
 ``` if ($document_count > 0) {    แก้เป็น   if ($document_count >= 0) { ```
+``` 
 
