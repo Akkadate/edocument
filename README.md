@@ -17,6 +17,10 @@ sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 [mysqld]
 ``` 
 sql_mode = ""
+```
+
+```
+systemctl restart mysql
 ``` 
 
 ## แก้ไขหน้า home 404 เวลา เอกสารใหม่ = 0
@@ -24,4 +28,6 @@ modules/edocument/controllers/home.php
 ``` 
 if ($document_count > 0) {    แก้เป็น   if ($document_count >= 0) { 
 ``` 
+##หน้าสร้างผู้ใช้ 
+modules/indes/views/register.php
 
