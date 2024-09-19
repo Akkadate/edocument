@@ -11,12 +11,12 @@
 
 [mysqld]
 ``` 
-```  sql_mode = ""  ```
+sql_mode = ""
 ``` 
 
 #### แก้ไขหน้า home 404 เวลา เอกสารใหม่ = 0
 modules/edocument/controllers/home.php
 ``` 
-``` if ($document_count > 0) {    แก้เป็น   if ($document_count >= 0) { ```
+if ($document_count > 0) {    แก้เป็น   if ($document_count >= 0) { 
 ``` 
 
